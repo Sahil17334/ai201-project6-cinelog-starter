@@ -34,3 +34,5 @@
 **What the feature does:** Adds a watchlist feature allowing users to queue films for future viewing, complete with a `WatchlistEntry` model, deduplication logic, and REST endpoints.
 **Design decisions:** Defaults to `public=True` to heavily bias toward future social/discovery features, and sorts by date-added to prioritize recent intent. 
 **How to manually test:** Start the app with `python app.py`. Use curl to POST to `/watchlist/<user_id>/add` with a valid `film_id` payload, then GET `/watchlist/<user_id>` to verify the film appears in the list.
+
+<img width="1468" height="312" alt="image" src="https://github.com/user-attachments/assets/c7e209e2-06b1-43db-805b-89640a4a00c9" />
